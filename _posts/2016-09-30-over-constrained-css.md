@@ -7,13 +7,13 @@ in a UI element with a much longer string, and the longer string now extends pas
 border of the element. In the giant CSS file (400+ lines, another problem for
 another time), I found this:
 
-```
+{% highlight css %}
 .custom-element {
   width: 100px;
   height: 20px;
   ...
 }
-```
+{% endhighlight %}
 
 Simply deleting the `height` rule fixed the problem. Now the browser takes
 care of setting the height of the element to fit its content, and the next time we

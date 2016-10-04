@@ -10,13 +10,13 @@ element to finish loading *before* taking a screenshot. Fortunately, there is
 a simple way to do this in BackstopJS by setting the `onReadyScript` configuration
 property to a file that contains something like:
 
-```
+{% highlight js %}
 casper.waitWhileVisible('.loading-affordance', function () {
   console.log('Done loading.');
 }, function () {
   console.log('Timed out.');
 }, 60000); // Timeout is in milliseconds.
-```
+{% endhighlight %}
 
 `waitWhileVisible()` is a [CasperJS function](http://docs.casperjs.org/en/latest/modules/casper.html#waitwhilevisible)
 that blocks the test until the specified element disappears. Alternatively,
