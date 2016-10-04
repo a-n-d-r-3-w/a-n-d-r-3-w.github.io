@@ -4,7 +4,8 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <small style='color: gray;'>{{ post.date | date: '%B %d, %Y' }}</small><br/>
+      <strong><a href="{{ post.url }}" style='vertical-align: middle;'>{{ post.title }}</a></strong>&nbsp;&nbsp;
+      <small style='color: gray; vertical-align: middle;'>{{ post.date | date: '%B %-d, %Y' }}</small><br/>
       {{ post.content | strip_html | truncatewords:30 }}<br/><br/>
     </li>
   {% endfor %}
