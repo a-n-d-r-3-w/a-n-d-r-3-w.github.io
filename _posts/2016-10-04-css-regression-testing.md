@@ -2,8 +2,8 @@
 layout: post
 title: CSS Regression Testing with BackstopJS
 ---
-How can we detect visual regressions as early as possible? One option is to use
-[BackstopJS](https://github.com/garris/BackstopJS), which I tried today. The
+How can we detect visual regressions as early as possible? I decided to try
+[BackstopJS](https://github.com/garris/BackstopJS). The
 setup instructions were well written and I soon had a useful set of tests. The
 important piece for me was to instruct BackstopJS to wait for a particular UI
 element to finish loading *before* taking a screenshot. Fortunately, there is
